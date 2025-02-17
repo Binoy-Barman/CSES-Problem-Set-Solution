@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define int long long int
+
+int32_t main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    // int t_case; cin>>t_case; while(t_case--){           }
+
+    int n;
+    cin >> n;
+    vector<int> even;
+    vector<int> odd;
+    if (n == 1)
+        cout << 1 << endl;
+    else if (n <= 3)
+        cout << "NO SOLUTION" << endl;
+    else
+    {
+        for (int i = 1; i <= n; i++)
+        {
+            if (i % 2 == 1)
+                odd.push_back(i);
+            else
+                even.push_back(i);
+        }
+    }
+
+    reverse(even.begin(), even.end());
+    reverse(odd.begin(), odd.end());
+
+    for (auto e : odd)
+    {
+        cout << e << " ";
+    }
+    for (auto e : even)
+    {
+        cout << e << " ";
+    }
+}
