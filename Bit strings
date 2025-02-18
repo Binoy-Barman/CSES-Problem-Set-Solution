@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define li long long
+const li N = 1e9 + 7;
+
+int32_t main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    // int t_case; cin>>t_case; while(t_case--){           }
+    li n;
+    cin >> n;
+
+    li total = 1;
+    for (li i = 1; i <= n; i++)
+    {
+        total %= N;
+        total *= 2;
+    }
+    cout << total % N << endl;
+}
