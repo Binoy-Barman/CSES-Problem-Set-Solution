@@ -1,0 +1,1 @@
+{"name":"Local: Bracket_sequence__II","url":"/home/binoy/git/CSES-Problem-Set-Solution/Bracket_sequence__II.cpp","tests":[{"id":1743178083400,"input":"6\n(()","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/binoy/git/CSES-Problem-Set-Solution/Bracket_sequence__II.cpp","group":"local","local":true}
